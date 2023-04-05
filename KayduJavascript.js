@@ -1,3 +1,4 @@
+debugger;
 document.addEventListener('readystatechange', (event) => {
 	var URL_link = "https://AdministracinKaydu.kaydu.net/";
 	var head = document.getElementsByTagName('HEAD')[0];
