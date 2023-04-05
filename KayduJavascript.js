@@ -1217,7 +1217,7 @@ function LandingCreateVisitorCookie(popupdata) {
 }
 var URL = (window.location.href);
 function InsertUpdateStaticData(templateUniqueId) {
-	debugger
+	
     var browser = get_browser_info();
 	console.log(GetCookie("BSpopup_IPaddressDT1"));
 	var IPdetails = B1popup_Jquery.parseJSON(GetCookie("BSpopup_IPaddressDT1"));
@@ -1487,7 +1487,7 @@ function CookietargetingCheck(data, condition, CookieCheck) {
 
 
 function getAllCookies() {
-debugger
+
     cookies = document.cookie.split(";"), array = [];
     for (var i = 0; i < cookies.length; i++) pair = cookies[i].split("="), $key = null == pair[0] ? "" : pair[0].trim(), $value = null == pair[1] ? "" : pair[1].trim(), "" != $key && array.push({
         key: $key,
