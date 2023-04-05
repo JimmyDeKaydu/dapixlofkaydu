@@ -27,7 +27,7 @@ blog.isFirstLoad = function(namesp) {
 
 var ContactUniqueIdSingle='';
 var query_string = { id: 0 },
-    Server_link = "https://AdministracinKaydu.kaydu.net";
+    Server_link = "https://AdministracinKaydu.kaydu.net",
     cdn_server = "",
     env = "app",
     B1popup_Jquery;
