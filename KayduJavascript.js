@@ -1,5 +1,5 @@
 document.addEventListener('readystatechange', (event) => {
-	var URL_link = document.getElementById("script-widget").src.replace("KayduIntegration.js", "");
+	var URL_link = "https://AdministracinKaydu.kaydu.net/";
 	var head = document.getElementsByTagName('HEAD')[0];
 	var link = document.createElement('link');
 	link.rel = 'stylesheet';
@@ -26,7 +26,7 @@ blog.isFirstLoad = function(namesp) {
 
 var ContactUniqueIdSingle='';
 var query_string = { id: 0 },
-    Server_link = document.getElementById("script-widget").src.replace("KayduIntegration.js", ""),
+    Server_link = "https://AdministracinKaydu.kaydu.net/";
     cdn_server = "",
     env = "app",
     B1popup_Jquery;
