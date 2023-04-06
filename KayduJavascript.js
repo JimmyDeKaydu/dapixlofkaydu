@@ -1,4 +1,3 @@
-debugger;
 document.addEventListener('readystatechange', (event) => {
 	var URL_link = "https://AdministracinKaydu.kaydu.net";
 	var head = document.getElementsByTagName('HEAD')[0];
@@ -523,6 +522,7 @@ function CallButtonClickFun() {
             //leaddataval.ContactUnique = GetCookie("CCID" + templateCustomizeUniqueId);
             leaddataval.popupName = returnedData[0].popupName;
             leaddataval.typename = returnedData[0].type;
+debugger;
             B1popup_Jquery.post(Server_link + "/Api/From_update", { request: leaddataval },
                 function (data) {
                     if (data != null) {
@@ -733,6 +733,7 @@ function CallButtonClickFun() {
             });
             leaddataval.LeadInputData = leadresult_array;
             leaddataval.formdata = formdata;
+debugger;
             B1popup_Jquery.post(Server_link + "/Api/From_update", { request: leaddataval },
                 function (data) {
                     if (data.id > 0) {
@@ -1177,6 +1178,7 @@ function LandingCreateVisitorCookie(popupdata) {
             }
 
         }
+debugger;
         B1popup_Jquery.ajax({
             url: Server_link + "/PopupFE/templateVisitorDataCreate/",
             type: "POST",
@@ -1232,6 +1234,7 @@ function InsertUpdateStaticData(templateUniqueId) {
         }
 
     }
+debugger;
     B1popup_Jquery.ajax({
         url: Server_link + "/PopupFE/VisitorDataCreate/",
         type: "POST",
@@ -1297,6 +1300,7 @@ function CreateVisitorCookie(popupdata) {
             }
 
         }
+debugger;
         B1popup_Jquery.ajax({
             url: Server_link + "/PopupFE/templateVisitorDataCreate/",
             type: "POST",
@@ -1348,6 +1352,7 @@ function UpdateViewedCount(popupdata) {
 
     }
     var IPdetails = B1popup_Jquery.parseJSON(GetCookie("BSpopup_IPaddressDT1"));
+debugger;
     B1popup_Jquery.ajax({
         url: Server_link + "/PopupFE/templateVisitorDataCreate/",
         type: "POST",
@@ -1751,6 +1756,7 @@ function CheckUpdateTrigger(triggerelement, element) {
         elementdata.EventName = value.destinations.eventName;
         elementdata.ContactUnique = GetCookie("CCID");
         var url = Server_link + "/API/UpdateCollector";
+debugger;
         B1popup_Jquery.post(url, { request: elementdata }, function (data) {
 
             if (value.timing.ttype == "once" || value.timing.ttype == "perday" || value.timing.ttype == "days") {
@@ -1973,6 +1979,7 @@ function getPermission(filtername, popupdata) {
         o = "";
     "" != i && (i = i.match(/:\/\/(.[^\/]+)/)[1]) != document.domain && (o = i);
     var n = B1popup_Jquery.parseJSON(GetCookie("BSpopup_IPaddressDT1"));
+debugger;
     B1popup_Jquery.ajax({
         url: Server_link + "/PopupFE/LandingTemplateVisitorDataCreate/",
         type: "POST",
