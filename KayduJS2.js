@@ -522,7 +522,10 @@ function CallButtonClickFun() {
             //leaddataval.ContactUnique = GetCookie("CCID" + templateCustomizeUniqueId);
             leaddataval.popupName = returnedData[0].popupName;
             leaddataval.typename = returnedData[0].type;
-debugger;
+
+			console.log(leaddataval);
+			debugger;
+			
             B1popup_Jquery.post(Server_link + "/Api/From_update", { request: leaddataval },
                 function (data) {
                     if (data != null) {
@@ -733,8 +736,11 @@ debugger;
             });
             leaddataval.LeadInputData = leadresult_array;
             leaddataval.formdata = formdata;
-debugger;
-            B1popup_Jquery.post(Server_link + "/Api/From_update", { request: leaddataval },
+
+		console.log(leaddataval);
+		debugger;
+            
+		B1popup_Jquery.post(Server_link + "/Api/From_update", { request: leaddataval },
                 function (data) {
                     if (data.id > 0) {
                         if (document.cookie.indexOf("BSpopupUp_" + returnedData[0].userId + "_" + returnedData[0].templateCustomizeUniqueId + "_" + browser.name) == -1) {
@@ -1756,7 +1762,12 @@ function CheckUpdateTrigger(triggerelement, element) {
         elementdata.EventName = value.destinations.eventName;
         elementdata.ContactUnique = GetCookie("CCID");
         var url = Server_link + "/API/UpdateCollector";
-debugger;
+
+	    
+		console.log(elementdata);
+		debugger;
+            
+	    
         B1popup_Jquery.post(url, { request: elementdata }, function (data) {
 
             if (value.timing.ttype == "once" || value.timing.ttype == "perday" || value.timing.ttype == "days") {
@@ -1859,7 +1870,10 @@ function eventRecord(eventname, n) {
     elementdata.fields = expressions;
     elementdata.ContactUnique = GetCookie("BSpopupSCQVD_" + getClientId())
     var url = Server_link + "/API/UpdateCollector";
-    debugger;
+  	
+		console.log(elementdata);
+		debugger;
+            	
     B1popup_Jquery.post(url, { request: elementdata }, function (data) {
     });
 }
