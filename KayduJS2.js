@@ -523,6 +523,7 @@ function CallButtonClickFun() {
             leaddataval.popupName = returnedData[0].popupName;
             leaddataval.typename = returnedData[0].type;
 
+			console.log(B1popup_Jquery);
 			console.log(JSON.stringify(leaddataval));
 			debugger;
 			
@@ -737,6 +738,7 @@ function CallButtonClickFun() {
             leaddataval.LeadInputData = leadresult_array;
             leaddataval.formdata = formdata;
 
+		console.log(B1popup_Jquery);
 		console.log(JSON.stringify(leaddataval));
 		debugger;
             
